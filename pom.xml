@@ -36,7 +36,7 @@
     <myfaces40.version>4.0.1</myfaces40.version>
     <mojarra40.version>4.0.5</mojarra40.version>
     <slf4j.version>2.0.9</slf4j.version>
-    <logback.version>1.4.12</logback.version>
+    <logback.version>1.4.14</logback.version>
     <maven.compile.source>1.8</maven.compile.source>
     <maven.compile.target>1.8</maven.compile.target>
     <maven.compile.encoding>UTF-8</maven.compile.encoding>
@@ -200,7 +200,7 @@
       <dependency>
         <groupId>commons-io</groupId>
         <artifactId>commons-io</artifactId>
-        <version>2.11.0</version>
+        <version>2.15.1</version>
       </dependency>
       <!-- only needed to build Tobago and for some examples, but not for runtime -->
       <dependency>
@@ -538,7 +538,7 @@
         </plugin>
         <plugin>
           <artifactId>maven-remote-resources-plugin</artifactId>
-          <version>3.0.0</version>
+          <version>3.1.0</version>
           <executions>
             <execution>
               <goals>
@@ -598,7 +598,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-dependency-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.1</version>
         </plugin>
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
@@ -624,7 +624,7 @@
         <plugin>
           <groupId>org.apache.maven.plugins</groupId>
           <artifactId>maven-javadoc-plugin</artifactId>
-          <version>3.5.0</version>
+          <version>3.6.3</version>
           <configuration>
             <source>${maven.compile.source}</source>
             <!-- switched off check in Java 8 -->
@@ -806,7 +806,7 @@
         <plugin>
           <groupId>org.owasp</groupId>
           <artifactId>dependency-check-maven</artifactId>
-          <version>8.4.3</version>
+          <version>9.0.2</version>
           <configuration>
             <failBuildOnCVSS>0</failBuildOnCVSS>
             <suppressionFile>tobago/dependency-check-suppression-for-tobago-6.x.xml</suppressionFile>
@@ -992,7 +992,7 @@
           <plugin>
             <groupId>com.github.eirslett</groupId>
             <artifactId>frontend-maven-plugin</artifactId>
-            <version>1.14.2</version>
+            <version>1.15.0</version>
 
             <!-- optional -->
             <configuration>
